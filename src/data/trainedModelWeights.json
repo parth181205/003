@@ -1,0 +1,23 @@
+{
+  "modelName": "Smriti-CognitiveNet-v2.4",
+  "accuracy": 89.5,
+  "rmse": 0.939,
+  "featureImportances": {
+    "reaction_time_ms": 0.192,
+    "memory_accuracy_pct": 0.3006,
+    "hesitation_count": 0.2071,
+    "sequence_errors": 0.1468,
+    "med_adherence_pct": 0.1153,
+    "age": 0.0382
+  },
+  "stages": {
+    "0": "Normal Cognitive Function",
+    "1": "Mild Cognitive Impairment (MCI)",
+    "2": "Early Stage Dementia",
+    "3": "Moderate Dementia"
+  },
+  "noiseFilter": {
+    "bandpass": "300Hz - 3400Hz Butterworth 5th Order",
+    "spectralDenoiseRMS": 0.7535
+  }
+}
