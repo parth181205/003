@@ -4,8 +4,8 @@ export const LANGUAGES = [
 
 export const TRANSLATIONS = {
   en: {
-    appTitle: "SmritiNER",
-    appTagline: "AI Cognitive Gaming & Memory Assistance for NER Elderly",
+    appTitle: "MannSaathi",
+    appTagline: "AI Cognitive Gaming & Memory Assistance Platform",
     mbonerTag: "Ministry of Development of North Eastern Region Initiative",
     navGames: "Cognitive Games",
     navReminders: "Daily Assistance",

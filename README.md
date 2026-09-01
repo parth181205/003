@@ -1,11 +1,11 @@
-# SmritiNER: AI-Based Cognitive Gaming & Memory Assistance Platform
+# MannSaathi: AI-Based Cognitive Gaming & Memory Assistance Platform
 
-![SmritiNER Banner](https://img.shields.io/badge/Status-Complete-brightgreen) ![React](https://img.shields.io/badge/Framework-React_19-blue) ![Vite](https://img.shields.io/badge/Build-Vite-purple) ![License](https://img.shields.io/badge/License-MIT-orange)
+![MannSaathi Banner](https://img.shields.io/badge/Status-Complete-brightgreen) ![React](https://img.shields.io/badge/Framework-React_19-blue) ![Vite](https://img.shields.io/badge/Build-Vite-purple) ![License](https://img.shields.io/badge/License-MIT-orange)
 
 **Project for the Ministry of Development of North Eastern Region (MDoNER)**
 **Problem Statement ID:** 26003
 
-SmritiNER is an accessible, AI-powered cognitive gaming and memory assistance platform developed explicitly for elderly dementia patients in the North Eastern Region (NER) of India. The platform bridges the gap in specialized neurological care by offering engaging, culturally resonant, and highly accessible digital therapy for patients, alongside robust clinical monitoring for caregivers.
+MannSaathi is an accessible, AI-powered cognitive gaming and memory assistance platform developed explicitly for elderly dementia patients in the North Eastern Region (NER) of India. The platform bridges the gap in specialized neurological care by offering engaging, culturally resonant, and highly accessible digital therapy for patients, alongside robust clinical monitoring for caregivers.
 
 ---
 
@@ -14,11 +14,11 @@ SmritiNER is an accessible, AI-powered cognitive gaming and memory assistance pl
 This section maps our platform's capabilities directly to the expected solution outlined in the hackathon problem statement.
 
 ### a. Interactive Cognitive Games & Activities
-SmritiNER features a comprehensive suite of adaptive modules:
-*   **🧠 Memory Improvement:** *Smriti Matching Cards* (Game 1) - Enhances spatial and visual memory using traditional NER cultural heritage items.
+MannSaathi features a comprehensive suite of adaptive modules:
+*   **🧠 Memory Improvement:** *Matching Cards* (Game 1) - Enhances spatial and visual memory using traditional NER cultural heritage items.
 *   **🎯 Attention & Concentration:** *Dhyana Focus & Spot* (Game 3) - Improves concentration spans by having users identify specific regional items in complex visual fields.
 *   **🌅 Daily Routine Recall:** *Niyama Daily Routine* (Game 2) - Strengthens executive function by allowing patients to order everyday morning and evening tasks.
-*   **🗝️ Pattern Recognition (Emotional & Mental Engagement):** *Smriti Escape Room* (Game 6) & *Kutumba Family Recall* (Game 5) - Deeply engaging activities that promote emotional calm, reminiscence, and logic puzzle solving within a soothing 50-Rooms style interface.
+*   **🗝️ Pattern Recognition (Emotional & Mental Engagement):** *50 Rooms Memory Escape* (Game 6) & *Kutumba Family Recall* (Game 5) - Deeply engaging activities that promote emotional calm, reminiscence, and logic puzzle solving within a soothing 50-Rooms style interface.
 
 ### b. AI/ML Algorithms for Adaptive Difficulty
 *   **Cognitive Stability Index:** The `CognitiveContext` engine dynamically adjusts game variables (timer speed, visual complexity, memory span) based on real-time performance. Difficulty scales across 3 levels: Gentle (Level 1), Moderate (Level 2), and Active (Level 3).
@@ -76,4 +76,4 @@ To test the application locally for judging or development:
 ---
 
 ## 🛡️ License & Copyright
-© 2026 SmritiNER Platform — Designed for Dementia Care & Rural Health Connectivity in NER India (MDoNER Initiative). All rights reserved.
+© 2026 MannSaathi Platform — Designed for Dementia Care & Rural Health Connectivity in NER India (MDoNER Initiative). All rights reserved.

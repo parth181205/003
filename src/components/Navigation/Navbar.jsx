@@ -83,7 +83,7 @@ export const Navbar = ({ activeTab, setActiveTab, highContrast, setHighContrast,
       <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-400 to-emerald-400 flex items-center justify-center text-emerald-950 font-black text-xl shadow">
-            SN
+            MS
           </div>
           <div>
             <h1 className="text-xl md:text-2xl font-black tracking-tight flex items-center gap-2">
