@@ -299,7 +299,10 @@ function ScoreCard({ score, max, label, onReplay }) {
 }
 
 // ─── GAME REGISTRY ─────────────────────────────────────────────────────────────
+import { TicTacTangoGame } from './TicTacTangoGame';
+
 const GAMES = [
+  { id:'tango',   title:'Tic-Tac-Tango (Shared Play)', emoji:'🤝', desc:'Play with a friend or caregiver', component: TicTacTangoGame },
   { id:'color',   title:'Color Match',    emoji:'🎨', desc:'Name the ink color, not the word',    component: ColorMatch   },
   { id:'number',  title:'Number Memory',  emoji:'🔢', desc:'Remember and type the digit sequence', component: NumberMemory },
   { id:'pattern', title:'Pattern Tap',    emoji:'💡', desc:'Repeat the flashing light sequence',   component: PatternTap   },

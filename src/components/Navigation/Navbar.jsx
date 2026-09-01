@@ -12,7 +12,8 @@ import {
   Moon, 
   Languages, 
   Sparkles,
-  HeartPulse
+  HeartPulse,
+  Users
 } from 'lucide-react';
 
 export const Navbar = ({ activeTab, setActiveTab, highContrast, setHighContrast, onOpenAiModal }) => {
@@ -102,6 +103,7 @@ export const Navbar = ({ activeTab, setActiveTab, highContrast, setHighContrast,
         <nav className="flex items-center gap-2 overflow-x-auto py-1">
           {[
             { id: 'games', label: t('navGames'), icon: Gamepad2, color: 'text-amber-400' },
+            { id: 'shared', label: t('navShared'), icon: Users, color: 'text-purple-400' },
             { id: 'reminders', label: t('navReminders'), icon: BellRing, color: 'text-sky-400' },
             { id: 'voice', label: t('navVoice'), icon: Mic, color: 'text-emerald-400' },
             { id: 'caregiver', label: t('navCaregiver'), icon: Activity, color: 'text-rose-400' },

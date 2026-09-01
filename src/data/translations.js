@@ -8,6 +8,7 @@ export const TRANSLATIONS = {
     appTagline: "AI Cognitive Gaming & Memory Assistance Platform",
     mbonerTag: "Ministry of Development of North Eastern Region Initiative",
     navGames: "Cognitive Games",
+    navShared: "Shared Play",
     navReminders: "Daily Assistance",
     navVoice: "Aai Voice Companion",
     navCaregiver: "Caregiver Portal",

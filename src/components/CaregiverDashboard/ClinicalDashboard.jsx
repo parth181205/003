@@ -85,6 +85,56 @@ export const ClinicalDashboard = ({ highContrast }) => {
         </div>
       </div>
 
+      {/* BrainTrack Inspired Goal Setting */}
+      <div className={`p-6 rounded-2xl border transition shadow-xl ${
+        highContrast 
+          ? 'bg-black text-yellow-300 border-2 border-yellow-400' 
+          : 'bg-emerald-950/80 text-white border border-emerald-500/30'
+      }`}>
+        <h3 className="text-base font-bold mb-4 flex items-center gap-2">
+          <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+          Daily Brain Health Goals
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+              </div>
+              <div>
+                <p className="text-sm font-bold text-emerald-100">Play 2 Games</p>
+                <p className="text-xs opacity-75">1/2 Completed</p>
+              </div>
+            </div>
+            <button className="px-3 py-1.5 rounded-lg bg-emerald-600/30 text-emerald-300 text-xs font-bold hover:bg-emerald-600/50">Start</button>
+          </div>
+          <div className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 text-amber-400" />
+              </div>
+              <div>
+                <p className="text-sm font-bold text-amber-100">Drink Water</p>
+                <p className="text-xs opacity-75">3/8 Glasses</p>
+              </div>
+            </div>
+            <button className="px-3 py-1.5 rounded-lg bg-amber-600/30 text-amber-300 text-xs font-bold hover:bg-amber-600/50">Log</button>
+          </div>
+          <div className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center">
+                <CheckCircle2 className="w-5 h-5 text-rose-400" />
+              </div>
+              <div>
+                <p className="text-sm font-bold text-rose-100">Shared Play</p>
+                <p className="text-xs opacity-75">Not started</p>
+              </div>
+            </div>
+            <button className="px-3 py-1.5 rounded-lg bg-rose-600/30 text-rose-300 text-xs font-bold hover:bg-rose-600/50">Play</button>
+          </div>
+        </div>
+      </div>
+
       {/* Visual Analytics Charts Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Line Chart: Weekly Cognitive Stability Curve */}

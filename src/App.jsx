@@ -16,7 +16,8 @@ import { HomeParallaxBackground } from './components/UI/HomeParallaxBackground';
 import { SosModal } from './components/UI/SosModal';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import { CognitiveProvider, useCognitive } from './context/CognitiveContext';
-import { Brain, Calendar, Mic, Users, PhoneCall, Key, Layers, Target, Music, Gamepad2, Star, PlaySquare, Search, ArrowRight, Home } from 'lucide-react';
+import { TicTacTangoGame } from './components/Games/TicTacTangoGame';
+import { Brain, Calendar, Mic, Users, PhoneCall, Key, Layers, Target, Music, Gamepad2, Star, PlaySquare, Search, ArrowRight, Home, HeartHandshake } from 'lucide-react';
 
 function MainApp() {
   const [activeTab, setActiveTab] = useState('home');
@@ -46,6 +47,7 @@ function MainApp() {
             {activeGameId === 'videos' && <VideoTherapyModule highContrast={false} />}
             {activeGameId === 'spotdiff' && <SpotDifferenceGame onExit={() => setActiveGameId(null)} />}
             {activeGameId === 'karaoke' && <BollywoodKaraokeGame highContrast={false} onExit={() => setActiveGameId(null)} />}
+            {activeGameId === 'tictactango' && <TicTacTangoGame onScore={() => {}} />}
           </div>
         </div>
       );
@@ -82,10 +84,11 @@ function MainApp() {
             { id: 'focus',    title: '4. Focus Time',       desc: 'Deep Breathing',        icon: <Target     className="w-10 h-10 text-blue-500" />,   border: 'border-blue-200 shadow-md' },
             { id: 'sound',    title: '5. Calm Therapy',     desc: 'Mind & Mood Care',      icon: <Music      className="w-10 h-10 text-rose-500" />,   border: 'border-rose-200 shadow-md' },
             { id: 'family',   title: '6. Recall',           desc: 'Strengthen Memory',     icon: <Users      className="w-10 h-10 text-emerald-600" />,border: 'border-emerald-200 shadow-md' },
-            { id: 'phaser',   title: '7. Play Zone',        desc: 'Fun Brain Games',       icon: <Gamepad2   className="w-10 h-10 text-purple-500" />, border: 'border-purple-200 shadow-md' },
-            { id: 'karaoke',  title: '8. Bollywood Karaoke',desc: 'Duet with Aai',         icon: <Star       className="w-10 h-10 text-pink-500" />,   border: 'border-pink-200 shadow-md' },
-            { id: 'videos',   title: '9. Watch Videos',     desc: 'Learn & Enjoy',         icon: <PlaySquare className="w-10 h-10 text-cyan-600" />,   border: 'border-cyan-200 shadow-md' },
-            { id: 'spotdiff', title: '10. Spot Difference', desc: 'Train Your Brain',      icon: <Search     className="w-10 h-10 text-orange-500" />, border: 'border-orange-200 shadow-md' },
+            { id: 'tictactango', title: '7. Shared Play',   desc: 'Play With Family',      icon: <HeartHandshake className="w-10 h-10 text-red-500" />, border: 'border-red-200 shadow-md' },
+            { id: 'phaser',   title: '8. Play Zone',        desc: 'Fun Brain Games',       icon: <Gamepad2   className="w-10 h-10 text-purple-500" />, border: 'border-purple-200 shadow-md' },
+            { id: 'karaoke',  title: '9. Karaoke',          desc: 'Duet with Aai',         icon: <Star       className="w-10 h-10 text-pink-500" />,   border: 'border-pink-200 shadow-md' },
+            { id: 'videos',   title: '10. Watch Videos',    desc: 'Learn & Enjoy',         icon: <PlaySquare className="w-10 h-10 text-cyan-600" />,   border: 'border-cyan-200 shadow-md' },
+            { id: 'spotdiff', title: '11. Spot Difference', desc: 'Train Your Brain',      icon: <Search     className="w-10 h-10 text-orange-500" />, border: 'border-orange-200 shadow-md' },
           ].map((game) => (
             <button
               key={game.id}
